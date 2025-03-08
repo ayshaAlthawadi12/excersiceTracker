@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Exercise Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin - Exercise Tracker</h1>
+        <h2>Profiles</h2>
+        <div id="profiles-list" class="list-group mb-4"></div>
+
+        <h2>Add Profile</h2>
+        <div class="form-group">
+            <input type="text" id="new-profile-name" class="form-control" placeholder="Profile Name">
+            <button onclick="addProfile()" class="btn btn-dark mt-2">Add Profile</button>
+        </div>
+
+        <h2>Exercises for Selected Profile</h2>
+        <div id="exercises-list" class="list-group mb-4"></div>
+
+        <h2>Add Exercise</h2>
+        <div class="form-group">
+            <input type="text" id="new-exercise-name" class="form-control" placeholder="Exercise Name">
+            <input type="number" id="new-exercise-total" class="form-control mt-2" placeholder="Total Reps">
+            <button onclick="addExercise()" class="btn btn-dark mt-2">Add Exercise</button>
+        </div>
+
+        <h2 id="log-list-label"></h2>
+        <div id="log-list" class="list-group mb-4"></div>
+
+        <h2 id="log-rest-list-label"></h2>
+        <div id="log-rest-list" class="list-group mb-4"></div>
+    </div>
+    <script type="module" src="admin-script.js"></script>
+</body>
+</html>

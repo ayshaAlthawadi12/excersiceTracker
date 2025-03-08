@@ -1,0 +1,15 @@
+"profiles": {
+  "profile1": {
+    "exercises": {
+      "exercise1": 100,
+      "exercise2": 150,
+      "exercise3": 200
+    }
+  },
+  "profile2": {
+    "exercises": {
+      "exercise1": 50,
+      "exercise2": 75
+    }
+  }
+}

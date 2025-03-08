@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    font-weight: bold;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    text-align: center;
+    vertical-align: bottom;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
